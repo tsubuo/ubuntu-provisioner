@@ -11,7 +11,6 @@ whitelist = %w[
   knife_zero
   os
   os_version
-  hostname
   ipaddress
   roles
   recipes

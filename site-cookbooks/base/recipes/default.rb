@@ -3,16 +3,16 @@ include_recipe 'apt-repo'
 
 ppa "graphics-drivers/ppa"
 
-%w(
+%w[
   vim
-  nvidia-367      # GeForce Graphics
-  mesa-common-dev # GeForce Graphics
-  freeglut3-dev   # GeForce Graphics
-  solaar          # Logicool Mouse Utility
-  solaar-gnome3   # Logicool Mouse Utility
+  nvidia-367
+  mesa-common-dev
+  freeglut3-dev
+  solaar
+  solaar-gnome3
   ruby-bundler
   ruby-dev
-).each do |name|
+].each do |name|
   package name do
     action :install
   end
