@@ -1,4 +1,7 @@
 # base::default
+include_recipe 'apt-repo'
+
+ppa "graphics-drivers/ppa"
 
 %w(
   vim
