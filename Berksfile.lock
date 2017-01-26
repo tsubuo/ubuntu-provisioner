@@ -1,0 +1,7 @@
+DEPENDENCIES
+  apt-repo
+    git: git@github.com:sometimesfood/chef-apt-repo.git
+    revision: 460a5e5bdb6adc2ef18dc1ea82f86d1740acb8ba
+
+GRAPH
+  apt-repo (0.1.2)
