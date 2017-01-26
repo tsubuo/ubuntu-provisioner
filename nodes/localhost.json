@@ -1,5 +1,24 @@
 {
   "name": "localhost",
+  "normal": {
+    "knife_zero": {
+      "host": "localhost"
+    }
+  },
+  "automatic": {
+    "os": "linux",
+    "os_version": "4.4.0-59-generic",
+    "hostname": "otaki-ubuntu",
+    "ipaddress": "192.168.0.21",
+    "roles": [
+      "base"
+    ],
+    "recipes": [
+      "base",
+      "base::default",
+      "apt-repo::default"
+    ]
+  },
   "run_list": [
     "role[base]"
   ]

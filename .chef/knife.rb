@@ -7,10 +7,20 @@ environment_path "environments"
 data_bag_path    "data_bags"
 #encrypted_data_bag_secret "data_bag_key"
 
-whitelist = []
+whitelist = %w[
+  knife_zero
+  os
+  os_version
+  hostname
+  ipaddress
+  roles
+  recipes
+  ipaddress
+]
 
+knife[:ssh_attribute] = "knife_zero.host"
 knife[:berkshelf_path] = "cookbooks"
-knife[:default_attribute_whitelist] = whitelist
-knife[:normal_attribute_whitelist] = whitelist
+knife[:default_attribute_whitelist] = []
+knife[:normal_attribute_whitelist] = []
 knife[:automatic_attribute_whitelist] = whitelist
-knife[:override_attribute_whitelist] = whitelist
+knife[:override_attribute_whitelist] = []
